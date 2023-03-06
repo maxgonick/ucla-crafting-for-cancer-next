@@ -14,18 +14,8 @@
   font-family: inherit;
 }
 
-/* .logo {
-  margin-right: auto;
-} */
-.links {
-  margin-right: 2rem;
-}
 .right {
   display: flex;
+  gap: 2rem;
+  align-items: center;
 }
-
-.links:last-child {
-  margin-right: 0;
-}
-
-
