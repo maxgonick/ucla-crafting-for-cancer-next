@@ -1,8 +1,31 @@
 .navbar {
   display: flex;
-  background-color: #1E1E1E;
+  background-color: #1e1e1e;
   color: white;
   justify-content: space-between;
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 1rem;
   align-items: center;
 }
+
+.button {
+  border-radius: 7px;
+  padding: 0.25rem 0.5rem;
+  background-color: #d9d9d9;
+  font-family: inherit;
+}
+
+/* .logo {
+  margin-right: auto;
+} */
+.links {
+  margin-right: 2rem;
+}
+.right {
+  display: flex;
+}
+
+.links:last-child {
+  margin-right: 0;
+}
+
+
