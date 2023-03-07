@@ -2,7 +2,7 @@ import React from "react";
 import styles from "../styles/Navbar.module.css";
 import Link from "next/link";
 import Image from "next/image";
-import whiteLogo from "@/public/white-logo.png";
+import whiteLogo from "@/public/white-logo-redone.png";
 import { Lexend } from "next/font/google";
 
 const lexend = Lexend({
@@ -18,17 +18,22 @@ const Navbar = (props: Props) => {
   return (
     <div className={lexend.className}>
       <nav className={styles.navbar}>
-<<<<<<< HEAD
         <Link href="/">
-          <Image src={whiteLogo} alt="logo" className={styles.logo} />
+          <Image
+            src={whiteLogo}
+            alt="logo"
+            className={styles.logo}
+            height={65}
+          />
         </Link>
-=======
-        <Image src={whiteLogo} alt="logo" />
->>>>>>> refs/remotes/origin/Navbar
         <div className={styles.right}>
-          <Link href="/">About Us</Link>
-          <Link href="/">Beanie Tutorial</Link>
-          <div>Forms</div>
+          <Link href="/" className={styles.underline}>
+            About Us
+          </Link>
+          <Link href="/" className={styles.underline}>
+            Beanie Tutorial
+          </Link>
+          <div className={styles.underline}>Forms</div>
           <Link href="/" className={styles.links}>
             <button className={styles.button}>Join Us!</button>
           </Link>
