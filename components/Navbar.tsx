@@ -18,9 +18,13 @@ const Navbar = (props: Props) => {
   return (
     <div className={lexend.className}>
       <nav className={styles.navbar}>
+<<<<<<< HEAD
         <Link href="/">
           <Image src={whiteLogo} alt="logo" className={styles.logo} />
         </Link>
+=======
+        <Image src={whiteLogo} alt="logo" />
+>>>>>>> refs/remotes/origin/Navbar
         <div className={styles.right}>
           <Link href="/">About Us</Link>
           <Link href="/">Beanie Tutorial</Link>
