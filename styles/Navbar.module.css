@@ -9,23 +9,22 @@
 
 .button {
   border-radius: 7px;
-  padding: 0.25rem 0.5rem;
+  padding: 0.5em 1rem;
   background-color: #d9d9d9;
-  font-family: inherit;
+  font: inherit;
+  color: black;
 }
 
-/* .logo {
-  margin-right: auto;
-} */
-.links {
-  margin-right: 2rem;
-}
 .right {
   display: flex;
+  justify-content: flex-end;
+  gap: 5rem;
+  margin-right: 1rem;
+  align-items: center;
 }
 
-.links:last-child {
-  margin-right: 0;
+@media screen and (max-width: 900px) {
+  .right {
+    display: none;
+  }
 }
-
-
