@@ -33,7 +33,7 @@ const Navbar = (props: Props) => {
             Beanie Tutorial
           </Link>
           <div className={styles.underline}>Forms</div>
-          <Link href="/" className={styles.links}>
+          <Link href="/" >
             <button className={styles.button}>Join Us!</button>
           </Link>
         </div>
