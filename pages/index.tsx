@@ -1,10 +1,16 @@
 import Head from "next/head";
 import Image from "next/image";
-import { Inter } from "next/font/google";
+import Link from "next/link";
+import { Lexend } from "next/font/google";
+import styles from "@/styles/index.module.css";
+import Beaniepic from "@/public/beaniepic.jpeg";
+import Boardpic from "@/public/boardpic.jpeg";
+
+const lexend = Lexend({
+  subsets: ["latin"],
+});
 
 import Navbar from "@/components/Navbar";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -15,8 +21,35 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
+      <main className={lexend.className}>
         <Navbar />
+        <div className={styles.top}>
+          <h1 className={styles.title}>What is Crafting for Cancer?</h1>
+          <p className={styles.paragraph}>
+            We are an organization that reaches out to cancer patients while
+            acquiring and maintaining the unique skill of crocheting. Members
+            learn how to crochet beanies which are donated to Jessie Rees
+            Foundation’s Brave Beanie program. This foundation puts these
+            beanies into Jessie’s Joy Jars which are given to kids fighting
+            cancer.
+          </p>
+          <Link href="/">
+            <button className={styles.button}>Join Us</button>
+          </Link>
+        </div>
+        <div className={styles.bottom}>
+          <div className={styles.left}>
+            <Image src={Beaniepic} alt="beanie pic" className={styles.pics} />
+            <p>
+              The one-hundred beanies we donated to the Jessie Rees Foundation
+              last year!
+            </p>
+          </div>
+          <div className={styles.right}>
+            <p>2021-2022 Club Members!</p>
+            <Image src={Boardpic} alt="board pic" className={styles.pics} />
+          </div>
+        </div>
       </main>
     </>
   );
