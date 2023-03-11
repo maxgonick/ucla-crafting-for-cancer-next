@@ -1,10 +1,17 @@
+import Navbar from "@/components/Navbar";
 import styles from "@/styles/Tutorials.module.css";
+import { Lexend } from "next/font/google";
+
+const lexend = Lexend({
+    subsets: ["latin"],
+    weight: "400",
+  });
 
 const Tutorial = () => {
-    const introText = 'This quarter, we are looking for teen-sized beanies!\nCircumference 20 ½" -22" height 9-10'
+    const introText = '\nThis quarter, we are looking for teen-sized beanies!\nCircumference 20 ½" -22" height 9-10"'
     const crochetBasics = "Learn how to crochet with these absolute beginner's tutorials on the very basic stitches. No intros, no talking, just straight to what you need to know!"
     const simpleBeanie = "Crochet a simple beanie for any and all ages, from 0-6 months to adult sizes!"
-    const tutorialText = '1. Slip knot\n'+
+    const tutorialText = '\n1. Slip knot\n'+
                          '2. Chain 4\n'+
                          '3. Slip stitch into the first stitch\n'+
                          '4. Create ten ½ double crochets into the ring\n'+
@@ -18,21 +25,22 @@ const Tutorial = () => {
                          '12. Slip stitch into the next stitch\n'+
                          '13. Tie off and weave in your ends';
     return ( 
-        <div>
+        <div className={lexend.className}>
+            <Navbar />
             <div className={styles.flat1}>
                 <h1>Beanie Tutorials</h1>
                 <div style={{ whiteSpace: "pre-wrap"}}>{introText}</div>  
             </div>
             <div className={styles.hov1}>
-                <h3>Crochet Basics</h3>
+                <h2>Crochet Basics</h2>
                 <div style={{ whiteSpace: "pre-wrap"}}>{crochetBasics}</div> 
             </div> 
             <div className={styles.hov2}>
-                <h3>Simple Beanie Patterns</h3>
+                <h2>Simple Beanie Patterns</h2>
                 <div style={{ whiteSpace: "pre-wrap"}}>{simpleBeanie}</div>  
             </div>
             <div className={styles.flat2}>
-                <h2>Teen-sized Beanie Tutorial</h2>
+                <h1>Teen-sized Beanie Tutorial</h1>
                 <div style={{ whiteSpace: "pre-wrap"}}>{tutorialText}</div>  
             </div>
         </div>
@@ -40,3 +48,4 @@ const Tutorial = () => {
 }
  
 export default Tutorial;
+// @refresh reset
