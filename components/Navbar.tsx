@@ -10,7 +10,7 @@ const Navbar = (props: Props) => {
     <div>
       <nav className={styles.navbar}>
         <Link href='/'>About Us</Link>
-          <Link href='/'>Beanie Tutorial</Link>
+          <Link href='/tutorials'>Beanie Tutorial</Link>
           <div>Forms</div>
           <button><Link href='/'>Contact Us</Link></button>
       </nav>

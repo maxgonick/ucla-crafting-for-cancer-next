@@ -1,0 +1,28 @@
+/* Beanie tutorials */
+.flat1{
+    background: white;
+    font-family: var(--font-mono);
+}
+/* Teen sized beanie tutorial */
+.flat2{
+    background: white;
+    font-family: var(--font-mono);
+}
+
+
+/* crochet basics */
+.hov1{
+    background: white;
+    border: gray solid;
+    width: 600px;
+    padding-top: 8;
+    padding-bottom: 8;
+    flex: auto;
+    align-items: center;
+    font-family: var(--font-mono);
+}
+/* simple beanie patterns */
+.hov2{
+    background: white;
+    font-family: var(--font-mono);
+}
