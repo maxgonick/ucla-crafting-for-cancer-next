@@ -17,8 +17,6 @@ const Tutorial = () => {
                          '11. The 7” beanie with a folded edge: this should be about 19 rows of ½ double crochets, for a total of 25 rows\n'+
                          '12. Slip stitch into the next stitch\n'+
                          '13. Tie off and weave in your ends';
-
-
     return ( 
         <div>
             <div className={styles.flat1}>
