@@ -30,7 +30,7 @@ const Navbar = (props: Props) => {
           <Link href="/" className={styles.underline}>
             About Us
           </Link>
-          <Link href="/" className={styles.underline}>
+          <Link href="/tutorials" className={styles.underline}>
             Beanie Tutorial
           </Link>
           <div className={styles.underline}>Forms</div>
