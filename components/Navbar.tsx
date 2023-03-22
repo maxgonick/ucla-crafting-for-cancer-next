@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import styles from "../styles/Navbar.module.css";
 import Link from "next/link";
 import Image from "next/image";
 import whiteLogo from "@/public/white-logo-redone.png";
 import { Lexend } from "next/font/google";
 import { RxHamburgerMenu } from "react-icons/rx/";
+import { debug } from "console";
 
 const lexend = Lexend({
   subsets: ["latin"],
@@ -12,23 +13,26 @@ const lexend = Lexend({
 
 type Props = {};
 
-// TODO responsive design!
-
 const Navbar = (props: Props) => {
   const [isOpen, setOpen] = useState(false);
-  const toggleMenu = () => {
+  const [height, setHeight] = useState<Number>();
+  const toggleMenu = (): void => {
     setOpen(!isOpen);
   };
+  // const navbarRef = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
-    const mediaQuery = window.matchMedia("(max-width");
-  });
+  // const getHeight = (): void => {
+  //   if (navbarRef) {
+  //     const newHeight = navbarRef.current?.offsetHeight;
+  //     console.log(newHeight);
+  //     setHeight(newHeight);
+  //   }
+  // };
 
-  const myTestFunc = () : Boolean => {
-    console.log("what")
-    return true
-  }
-
+  // useEffect(() => {
+  //   console.log("ran!");
+  //   getHeight();
+  // }, [isOpen]);
   return (
     <div className={lexend.className}>
       <nav className={styles.navbar}>
@@ -41,9 +45,9 @@ const Navbar = (props: Props) => {
           />
         </Link>
         <div className={styles.menuicon} onClick={toggleMenu}>
-          <RxHamburgerMenu onClick={}/>
+          <RxHamburgerMenu />
         </div>
-        <div className={styles.right}>
+        <div className={isOpen ? styles.mobileright : styles.right}>
           <Link href="/" className={styles.underline}>
             About Us
           </Link>

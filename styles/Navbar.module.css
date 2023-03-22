@@ -13,7 +13,7 @@
   background-color: #adadad;
   font: inherit;
   color: #262626;
-  border: none;
+  border: 1px white;
   position: relative;
 }
 
@@ -50,6 +50,25 @@
 .underline:hover::before {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+.close {
+  display: none;
+}
+
+.mobileright {
+  position: fixed;
+  left: 0;
+  top: 85px;
+  width: 100%;
+  background-color: #2c2c2c;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 5rem;
+  align-items: center;
+  padding-block: 2rem;
+  box-shadow: #2c2c2c;
 }
 
 @media screen and (max-width: 850px) {
