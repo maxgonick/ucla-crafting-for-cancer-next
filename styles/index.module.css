@@ -4,6 +4,7 @@
   flex-direction: column;
   margin: 3rem 2rem;
   justify-content: space-between;
+  gap: 1.5rem;
 }
 
 .title {
@@ -17,13 +18,15 @@
 }
 
 .button {
-  background-color: black;
+  background-color: #525252;
   font-family: inherit;
   color: white;
   border-radius: 8px;
   padding: 0.5rem 1.5rem;
   border: none;
+  padding: 0.6rem 1.5rem;
   font-weight: 400;
+  box-shadow: 2px 2px 5px #525252;
 }
 /* Image/caption layout */
 .bottom {

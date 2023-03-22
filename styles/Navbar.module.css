@@ -28,7 +28,6 @@
   position: relative;
   display: inline-block;
   padding-bottom: 5px;
-  color: #2c2c2c;
 }
 
 .underline::before {
@@ -49,10 +48,25 @@
   transform-origin: bottom left;
 }
 
-/* @media screen and (max-width: 900px) {
+.rightopen {
+  display: none;
+}
+
+.menuicon {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
   .right {
     display: none;
   }
 
+  .rightopen {
+    display: flex;
+    flex-direction: column;
+  }
 
-} */
+  .menuicon {
+    display: block;
+  }
+}
