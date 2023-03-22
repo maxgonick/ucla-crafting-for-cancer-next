@@ -48,25 +48,10 @@
   transform-origin: bottom left;
 }
 
-.rightopen {
-  display: none;
-}
-
-.menuicon {
-  display: none;
-}
-
-@media screen and (max-width: 900px) {
+/* @media screen and (max-width: 900px) {
   .right {
     display: none;
   }
 
-  .rightopen {
-    display: flex;
-    flex-direction: column;
-  }
 
-  .menuicon {
-    display: block;
-  }
-}
+} */
