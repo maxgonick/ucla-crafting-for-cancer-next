@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "../styles/Navbar.module.css";
 import Link from "next/link";
 import Image from "next/image";
@@ -20,6 +20,15 @@ const Navbar = (props: Props) => {
     setOpen(!isOpen);
   };
 
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width");
+  });
+
+  const myTestFunc = () : Boolean => {
+    console.log("what")
+    return true
+  }
+
   return (
     <div className={lexend.className}>
       <nav className={styles.navbar}>
@@ -32,9 +41,9 @@ const Navbar = (props: Props) => {
           />
         </Link>
         <div className={styles.menuicon} onClick={toggleMenu}>
-          <RxHamburgerMenu />
+          <RxHamburgerMenu onClick={}/>
         </div>
-        <div className={isOpen ? styles.rightopen : styles.right}>
+        <div className={styles.right}>
           <Link href="/" className={styles.underline}>
             About Us
           </Link>

@@ -24,6 +24,10 @@
   align-items: center;
 }
 
+.menuicon {
+  display: none;
+}
+
 .underline {
   position: relative;
   display: inline-block;
@@ -48,10 +52,12 @@
   transform-origin: bottom left;
 }
 
-/* @media screen and (max-width: 900px) {
+@media screen and (max-width: 850px) {
+  .menuicon {
+    display: block;
+  }
+
   .right {
     display: none;
   }
-
-
-} */
+}
