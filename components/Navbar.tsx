@@ -1,13 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "../styles/Navbar.module.css";
 import Link from "next/link";
 import Image from "next/image";
 import whiteLogo from "@/public/white-logo-redone.png";
 import { Lexend } from "next/font/google";
+import { RxHamburgerMenu } from "react-icons/rx/";
 
 const lexend = Lexend({
   subsets: ["latin"],
-  weight: "400",
 });
 
 type Props = {};
@@ -15,6 +15,11 @@ type Props = {};
 // TODO responsive design!
 
 const Navbar = (props: Props) => {
+  const [isOpen, setOpen] = useState(false);
+  const toggleMenu = () => {
+    setOpen(!isOpen);
+  };
+
   return (
     <div className={lexend.className}>
       <nav className={styles.navbar}>
@@ -26,15 +31,18 @@ const Navbar = (props: Props) => {
             height={65}
           />
         </Link>
-        <div className={styles.right}>
+        <div className={styles.menuicon} onClick={toggleMenu}>
+          <RxHamburgerMenu />
+        </div>
+        <div className={isOpen ? styles.rightopen : styles.right}>
           <Link href="/" className={styles.underline}>
             About Us
           </Link>
-          <Link href="/tutorials" className={styles.underline}>
+          <Link href="/tutorial" className={styles.underline}>
             Beanie Tutorial
           </Link>
           <div className={styles.underline}>Forms</div>
-          <Link href="/" className={styles.links}>
+          <Link href="/">
             <button className={styles.button}>Join Us!</button>
           </Link>
         </div>
