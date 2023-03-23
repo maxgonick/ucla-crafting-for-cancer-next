@@ -5,12 +5,12 @@ import { Lexend } from "next/font/google";
 import styles from "@/styles/index.module.css";
 import Beaniepic from "@/public/beaniepic.jpeg";
 import Boardpic from "@/public/boardpic.jpeg";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const lexend = Lexend({
   subsets: ["latin"],
 });
-
-import Navbar from "@/components/Navbar";
 
 export default function Home() {
   return (
@@ -50,6 +50,7 @@ export default function Home() {
             <Image src={Boardpic} alt="board pic" className={styles.pics} />
           </div>
         </div>
+        <Footer />
       </main>
     </>
   );
