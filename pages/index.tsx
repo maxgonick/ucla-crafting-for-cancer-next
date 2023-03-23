@@ -50,6 +50,7 @@ export default function Home() {
             <Image src={Boardpic} alt="board pic" className={styles.pics} />
           </div>
         </div>
+        <br />
         <Footer />
       </main>
     </>
