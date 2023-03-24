@@ -1,16 +1,11 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import { Lexend } from "next/font/google";
 import styles from "@/styles/index.module.css";
 import Beaniepic from "@/public/beaniepic.jpeg";
 import Boardpic from "@/public/boardpic.jpeg";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-
-const lexend = Lexend({
-  subsets: ["latin"],
-});
 
 export default function Home() {
   return (
@@ -21,7 +16,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={lexend.className}>
+      <main className={styles.main}>
         <Navbar />
         <div className={styles.top}>
           <h1 className={styles.title}>What is Crafting for Cancer?</h1>
@@ -51,8 +46,8 @@ export default function Home() {
           </div>
         </div>
         <br />
-        <Footer />
-      </main>
+        <Footer className={styles.footer} />
+      </main>  
     </>
   );
 }

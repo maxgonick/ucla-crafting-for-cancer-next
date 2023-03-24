@@ -5,11 +5,13 @@ import Image from "next/image";
 import blackLogo from "@/public/black-logo.png";
 import styles from "../styles/Footer.module.css";
 
-type Props = {};
+interface Props {
+  className?: string;
+}
 
-const Footer = (props: Props) => {
+const Footer: React.FC<Props> = (props: Props) => {
   return (
-    <div className={styles.main}>
+    <div className={(styles.main, props.className)}>
       <div className={styles.icons}>
         <Image src={blackLogo} alt="logo" height={65} />
         <SiGroupme size={30} />

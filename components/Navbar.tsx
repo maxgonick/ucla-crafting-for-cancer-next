@@ -3,38 +3,19 @@ import styles from "../styles/Navbar.module.css";
 import Link from "next/link";
 import Image from "next/image";
 import whiteLogo from "@/public/white-logo-redone.png";
-import { Lexend } from "next/font/google";
 import { RxHamburgerMenu } from "react-icons/rx/";
 import { debug } from "console";
-
-const lexend = Lexend({
-  subsets: ["latin"],
-});
 
 type Props = {};
 
 const Navbar = (props: Props) => {
-  const [isOpen, setOpen] = useState(false);
+  const [isOpen, setOpen] = useState<Boolean>(false);
   const [height, setHeight] = useState<Number>();
   const toggleMenu = (): void => {
     setOpen(!isOpen);
   };
-  // const navbarRef = useRef<HTMLDivElement>(null);
-
-  // const getHeight = (): void => {
-  //   if (navbarRef) {
-  //     const newHeight = navbarRef.current?.offsetHeight;
-  //     console.log(newHeight);
-  //     setHeight(newHeight);
-  //   }
-  // };
-
-  // useEffect(() => {
-  //   console.log("ran!");
-  //   getHeight();
-  // }, [isOpen]);
   return (
-    <div className={lexend.className}>
+    <div>
       <nav className={styles.navbar}>
         <Link href="/">
           <Image

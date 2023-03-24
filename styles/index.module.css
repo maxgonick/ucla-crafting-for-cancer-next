@@ -1,3 +1,9 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
 /* Header description and button layout */
 .top {
   display: flex;
@@ -87,4 +93,10 @@
   .right > p {
     caption-side: bottom;
   }
+}
+
+.footer {
+  margin-top: auto;
+  margin-bottom: 1rem;
+  margin-inline: 0.5rem;
 }

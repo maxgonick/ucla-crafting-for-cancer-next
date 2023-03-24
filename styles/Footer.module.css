@@ -12,4 +12,11 @@
 
 .credit {
   align-self: flex-start;
+  font-size: small;
+}
+
+@media screen and (max-width: 1030px) {
+  .credit {
+    align-self: center;
+  }
 }
