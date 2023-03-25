@@ -27,6 +27,7 @@ const Tutorial = () => {
   return (
     <div className={styles.main}>
       <Navbar />
+      
       <Footer />
     </div>
   );
