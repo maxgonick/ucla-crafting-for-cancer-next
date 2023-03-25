@@ -18,6 +18,14 @@
   margin-bottom: 0.25rem;
 }
 
+.socials > * {
+  cursor: pointer;
+}
+
+.reset {
+  display: inline-flex;
+}
+
 @media screen and (max-width: 1030px) {
   .credit {
     align-self: center;
