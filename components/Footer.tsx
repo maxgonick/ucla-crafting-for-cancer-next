@@ -23,33 +23,36 @@ const Footer: React.FC<Props> = (props: Props) => {
   };
 
   return (
-    <div className={props.className}>
-      <div className={styles.icons}>
-        <Link href="/">
-          <Image src={blackLogo} alt="logo" height={65} />
-        </Link>
-        <div className={styles.socials}>
-          <SiGroupme
-            size={35}
-            role="button"
-            tabIndex={0}
-            onClick={groupMeLink}
-          />
-          <SiInstagram
-            size={35}
-            role="button"
-            tabIndex={0}
-            onClick={instaLink}
-          />
-          <MdEmail size={35} role="button" tabIndex={0} onClick={emailLink} />
+    <div className={styles.top}>
+      <hr className={styles.line} />
+      <div className={styles.main}>
+        <div className={styles.icons}>
+          <Link href="/">
+            <Image src={blackLogo} alt="logo" height={65} />
+          </Link>
+          <div className={styles.socials}>
+            <SiGroupme
+              size={35}
+              role="button"
+              tabIndex={0}
+              onClick={groupMeLink}
+            />
+            <SiInstagram
+              size={35}
+              role="button"
+              tabIndex={0}
+              onClick={instaLink}
+            />
+            <MdEmail size={35} role="button" tabIndex={0} onClick={emailLink} />
+          </div>
         </div>
-      </div>
-      <div className={styles.credit}>
-        Made with ❤️ by{" "}
-        <a href="https://github.com/maxgonick" className={styles.reset}>
-          Maxwell Gonick
-        </a>{" "}
-        with Next.js
+        <div className={styles.credit}>
+          Made with ❤️ by{" "}
+          <a href="https://github.com/maxgonick" className={styles.reset}>
+            Maxwell Gonick
+          </a>{" "}
+          with Next.js
+        </div>
       </div>
     </div>
   );

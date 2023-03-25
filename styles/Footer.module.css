@@ -1,9 +1,25 @@
+.top {
+  margin-top: auto;
+}
+
 .icons {
   align-self: center;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10%;
+}
+.main {
+  margin-top: auto;
+  margin-inline: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.line {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 .socials {

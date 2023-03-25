@@ -1,49 +1,55 @@
+.main {
+  height: 100dvh;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 /* Beanie tutorials */
-.flat1{
-    background: white;
-    font-weight: 250;
-    padding-top: 50px;
-    padding-left: 40px;
+.flat1 {
+  background: white;
+  font-weight: 250;
+  padding-top: 50px;
+  padding-left: 40px;
 }
 /* Teen sized beanie tutorial */
-.flat2{
-    background: white;
-    font-weight: 250;
-    padding-left: 40px;
-    position: relative;
-    top: 60px;
+.flat2 {
+  background: white;
+  font-weight: 250;
+  padding-left: 40px;
+  position: relative;
+  top: 60px;
 }
-
 
 /* crochet basics */
-.hov1{
-    background: white;
-    display: inline-block;
-    height: 160px;
-    width: 430px;
-    text-align: left;
-    align-items: center;
-    padding: 25px 25px;
-    border-radius: 25px;
-    font-weight: 250;
-    position: relative;
-    top: 30px;
-    left: 40px;
-    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5)
+.hov1 {
+  background: white;
+  display: inline-block;
+  height: 160px;
+  width: 430px;
+  text-align: left;
+  align-items: center;
+  padding: 25px 25px;
+  border-radius: 25px;
+  font-weight: 250;
+  position: relative;
+  top: 30px;
+  left: 40px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
 }
 /* simple beanie patterns */
-.hov2{
-    background: white;
-    font-weight: 250;
-    display: inline-block;
-    height: 160px;
-    width: 430px;
-    text-align: left;
-    align-items: center;
-    padding: 25px 25px;
-    border-radius: 25px;
-    position: relative;
-    top: -10px;
-    left: 200px;
-    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5)
+.hov2 {
+  background: white;
+  font-weight: 250;
+  display: inline-block;
+  height: 160px;
+  width: 430px;
+  text-align: left;
+  align-items: center;
+  padding: 25px 25px;
+  border-radius: 25px;
+  position: relative;
+  top: -10px;
+  left: 200px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
 }

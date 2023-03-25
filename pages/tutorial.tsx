@@ -1,5 +1,6 @@
 import styles from "@/styles/Tutorial.module.css";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const Tutorial = () => {
   const introText =
@@ -24,24 +25,9 @@ const Tutorial = () => {
     "13. Tie off and weave in your ends";
 
   return (
-    <div>
+    <div className={styles.main}>
       <Navbar />
-      <div className={styles.flat1}>
-        <h1>Beanie Tutorials</h1>
-        <div style={{ whiteSpace: "pre-wrap" }}>{introText}</div>
-      </div>
-      <div className={styles.hov1}>
-        <h3>Crochet Basics</h3>
-        <div style={{ whiteSpace: "pre-wrap" }}>{crochetBasics}</div>
-      </div>
-      <div className={styles.hov2}>
-        <h3>Simple Beanie Patterns</h3>
-        <div style={{ whiteSpace: "pre-wrap" }}>{simpleBeanie}</div>
-      </div>
-      <div className={styles.flat2}>
-        <h2>Teen-sized Beanie Tutorial</h2>
-        <div style={{ whiteSpace: "pre-wrap" }}>{tutorialText}</div>
-      </div>
+      <Footer />
     </div>
   );
 };

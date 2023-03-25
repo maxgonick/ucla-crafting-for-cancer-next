@@ -1,7 +1,12 @@
 .main {
   display: flex;
   flex-direction: column;
+  height: 100dvh;
   height: 100vh;
+}
+
+.top {
+  margin-top: auto;
 }
 
 /* Header description and button layout */
@@ -93,17 +98,4 @@
   .right > p {
     caption-side: bottom;
   }
-}
-
-.footer {
-  margin-top: auto;
-  margin-inline: 0.5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-}
-
-.line {
-  margin-top: 2rem;
-  margin-bottom: 1rem;
 }
