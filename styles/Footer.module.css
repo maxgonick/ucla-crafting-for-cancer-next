@@ -3,7 +3,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 10%;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: min(15%, 5rem);
 }
 
 .credit {

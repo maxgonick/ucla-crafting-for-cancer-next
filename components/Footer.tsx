@@ -14,9 +14,11 @@ const Footer: React.FC<Props> = (props: Props) => {
     <div className={props.className}>
       <div className={styles.icons}>
         <Image src={blackLogo} alt="logo" height={65} />
-        <SiGroupme size={30} />
-        <SiInstagram size={30} />
-        <MdEmail size={30} />
+        <div className={styles.socials}>
+          <SiGroupme size={35} />
+          <SiInstagram size={35} />
+          <MdEmail size={35} />
+        </div>
       </div>
       <div className={styles.credit}>
         Made with ❤️ by Maxwell Gonick with Next.js
