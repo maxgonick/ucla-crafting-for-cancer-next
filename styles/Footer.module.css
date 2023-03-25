@@ -1,18 +1,15 @@
-.main {
-  display: flex;
-  flex-direction: column;
-}
-
 .icons {
   align-self: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 2rem;
 }
 
 .credit {
   align-self: flex-start;
-  font-size: small;
+  font-size: x-small;
+  margin-bottom: 0.25rem;
 }
 
 @media screen and (max-width: 1030px) {

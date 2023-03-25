@@ -11,7 +11,7 @@ interface Props {
 
 const Footer: React.FC<Props> = (props: Props) => {
   return (
-    <div className={(styles.main, props.className)}>
+    <div className={props.className}>
       <div className={styles.icons}>
         <Image src={blackLogo} alt="logo" height={65} />
         <SiGroupme size={30} />

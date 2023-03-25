@@ -45,9 +45,9 @@ export default function Home() {
             <Image src={Boardpic} alt="board pic" className={styles.pics} />
           </div>
         </div>
-        <br />
+        <hr className={styles.line} />
         <Footer className={styles.footer} />
-      </main>  
+      </main>
     </>
   );
 }
